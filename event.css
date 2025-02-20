@@ -1,0 +1,122 @@
+*{
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/donobg.png);
+    background-size: cover; /* Ensures the background image covers entire background */
+    background-position: center; /* Centers the background image */
+}
+
+.donation-form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+    text-align: center;
+    width: 300px;
+}
+
+.donation-form h2 {
+    margin-top: 0;
+    color: #0b3d91;
+}
+
+.donation-form p {
+    color: black;
+    font-size: 20px;
+}
+
+.donation-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.donation-button {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.donation-button.selected {
+    background: #0b3d91;
+    color: white;
+}
+
+.other-amount {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.next-button {
+    background: #089618;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    transition: background 0.3s;
+}
+
+.next-button:hover {
+    background: #0BD622;
+}
+
+.crypto-link {
+    display: block;
+    margin-top: 10px;
+    color: #0b3d91;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.crypto-link:hover {
+    text-decoration: underline;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .backvid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .backvid{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.button{
+    position: fixed;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 20px; /* Adjust this value as needed */
+    padding: 10px 20px;
+    background-color: #089618;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.button:hover{
+    background-color: #0BD622;
+}
